@@ -65,6 +65,7 @@ header {
     vertical-align: middle;
     background-size: cover;
     margin: 0;
+    padding-left: 120px;
 }
 
 .inline-block a {
@@ -152,23 +153,24 @@ a:focus {
 }  
 
 .profilePic {
-    height: 510px;
+    height: 550px;
     float: left;
     border: 0;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
     margin-top: -50px;
+    margin-left: 100px;   
   }
 
   .about h1 {
     display: flex;
-    padding-top: 57px;
+    padding-top: 55px;
     font-family: 'arkhipregular', sans-serif;
     font-weight: lighter;
     font-size: 35px;  
     color: #4E313F;
     text-transform: uppercase;
     letter-spacing: -1px;
-    padding-left: 60px;
+    padding-left: 57px;
     margin: 0;
   }
 
@@ -178,7 +180,7 @@ a:focus {
     letter-spacing: 0.1px;
     color: #262626;
     font-size: 14.75px;
-    margin-left: 594px;
+    margin-left: 733px;
   }
 
   .email {
@@ -261,7 +263,7 @@ a:focus {
 
  .design {
     width: 33%;
-    margin-left: 335px;
+    margin-left: 420px;
     }
 
  .ux {
@@ -327,7 +329,7 @@ button:focus {
 .bbPreview  {
     text-align: center;
     grid-area: 'preview';
-    margin-top: -83px;
+    margin-top: -110px;
 }
 
 .bbPreview img {
@@ -402,7 +404,7 @@ button:focus {
 .otraPreview  {
     text-align: center;
     grid-area: 'preview';
-    margin-top: -83px;
+    margin-top: -110px;
 }
 
 .otraPreview img {
@@ -574,7 +576,7 @@ footer {
     color: #dddddd;
     vertical-align: middle;
     padding-top: 111px;
-    padding-left: 600px;
+    padding-left: 1055px;
     padding-right: 25px;  
     float: left;  
   }
@@ -586,13 +588,11 @@ footer {
     padding-right: 25px;
 }
 
-
-
   .copyright  {
     color: #DDDDDD;
     font-family: 'axiformabook';
     font-size: 11px;
-    padding-left: 1080px;
+    padding-left: 1530px;
     width: 310px;
     text-align: right;
 }
@@ -620,7 +620,65 @@ footer {
 .footerResume img:hover {
     opacity: 1;
 }
+
+
+
 /* Media Queries */
+
+/* 1440 */
+
+@media only screen and (max-width: 1440px) {
+
+/* Header */
+
+    .inline-block {
+        display: inline-block;
+        vertical-align: middle;
+        background-size: cover;
+        margin: 0;
+        padding-left: 0px;
+    }
+
+    .logo {
+        padding: 30px 50px;
+        width: 70%;
+        margin: 0;
+    }
+
+    /* About */
+
+    .about {
+        background-color: rgba(102,98,1, 0.05);
+        padding-bottom: 75px;
+    }  
+
+    .profilePic {
+        height: 510px;
+        margin-left: 0px;
+    }
+
+        .about p {
+            margin-left: 590px;
+          }
+    }
+
+
+    /* Skills */
+    .design {
+        width: 33%;
+        margin-left: 335px;
+    }
+
+    /* Footer */
+
+    .connect {
+        padding-left: 600px;
+    }
+
+    .copyright  {
+        padding-left: 1080px;
+        width: 310px;
+    }
 
 
 /* 1024*/
@@ -1753,3 +1811,237 @@ footer {
         padding-top: 60px;
     }
 }
+
+/* 1024*/
+
+@media only screen and (max-width: 1px) {
+
+    /* Header */
+    
+        .inline-block {
+            padding-left: 375px;
+        }
+    
+        .inline-block a {
+            padding-bottom: 10px;
+        }
+    
+        .logo {
+            padding: 30px 60px;
+            padding-bottom: 10px;
+        }
+        
+        .logo img {
+            max-width: 30%; 
+            margin-left: 375px;
+        }
+    
+    /* About */
+    
+        .profilePic {
+            height: 510px;
+            float: none;
+            margin-left: 250px;
+          }
+        
+          .about h1 {
+    
+            padding-top: 35px;
+            padding-left: 175px;
+          }
+        
+        .about p {
+            margin-left: 175px;
+          }
+        
+          .email {
+            margin-right: 35px;
+            margin-left: 175px;
+          }
+    
+    /*Skills */
+       
+        .mySkills h1 {
+            margin-top: -50px;
+            text-align: center;
+        }
+    
+        .design {
+           width: 33%;
+           margin-left: 130px;
+           }
+       
+        .ux {
+           width: 33%;
+           margin-left: 25px;
+       }
+       
+       .personal {
+           width: 33%;
+           margin-left: 0px;
+       }
+    
+    /* Work */ 
+    
+        .workHead {
+            margin-top: -50px;
+            margin-left: 45px;
+        } 
+    
+        .workGrid {
+            margin: 5px;
+            display: grid;
+            grid-template-rows: 200px 200px;
+            grid-template-columns: 50% 50%;
+            grid-template-areas:
+            "preview description"
+            ;
+        }
+    
+        .workGrid1 {
+            grid-template-areas:
+            "description preview"
+            ;
+        }
+    
+        .bbPreview  {
+            text-align: center;
+            grid-area: 'preview';
+            margin-top: -83px;
+        }
+    
+        .bbPreview img {
+            width: 57%;
+        }
+    
+        .bbText {
+            margin-top: 70px;
+        }
+    
+        .bbText h2 {
+            font-size: 18px;
+            padding-left: 30px;
+            padding-bottom: 10px;
+        }
+    
+        .bbText h4 {
+            font-size: 12.5px;
+            padding-left: 30px;
+        }
+    
+        .bbText p {
+            font-size: 11.75px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+        }
+    
+        .bbBtn {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+    
+        .otraPreview  {
+            text-align: center;
+            grid-area: 'preview';
+            margin-top: -83px;
+        }
+        
+        .otraPreview img {
+            text-align: center;
+            grid-area: 'preview';
+            width: 57%;
+        }
+    
+        .otraText h2 {
+            font-size: 18px;
+            margin-left: -163px;
+            margin-top: -50px;
+            padding-bottom: 10px;
+            grid-area: 'description';
+        }
+        
+        .otraText h4 {
+            font-size: 12.5px;
+            margin-left: -163px;
+            grid-area: 'description';
+        }
+        
+        .otraText p {
+            font-size: 11.75px;
+            margin-left: -163px;
+            padding-bottom: 20px;
+            grid-area: 'description';
+        }
+        
+        .otraBtn {
+            margin-left: -163px;
+            margin-bottom: 25px;
+            grid-area: 'description';
+        }
+    
+        .bbePreview  {
+            text-align: center;
+            grid-area: 'preview';
+            margin-top: -50px;
+        }
+    
+        .bbePreview img {
+            width: 110%;
+        }
+    
+        .bbeText {
+            margin-top: 40px;
+        }
+    
+        .bbeText h2 {
+            font-size: 18px;
+            margin-left: -50px;
+            padding-bottom: 10px;
+        }
+    
+        .bbeText h4 {
+            font-size: 12px;
+            margin-left: -50px;
+        }
+    
+        .bbeText p {
+            font-size: 11px;
+            padding-bottom: 20px;
+            margin-left: -50px;
+        }
+    
+        .bbeBtn {
+            margin-left: -50px;
+            margin-bottom: 25px;
+        }
+    
+    /* Footer */
+        
+        .footerLogo {
+            padding-left: 20px;
+            padding-top: 50px;
+            float: left;
+        }
+        
+        .footerLogo img {
+            height: 150px;
+            padding-left: 40px;
+        }
+        
+        .connect {
+            padding-top: 80px;
+            padding-left: 130px;
+            padding-right: 150px;
+            margin-right: -120px;
+        }
+        
+          .contact img {
+            padding-top: 120px;
+        }
+        
+          .copyright  {
+            padding-left: 340px;
+            padding-top: 75px;
+        }
+    }
+

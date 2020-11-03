@@ -1819,7 +1819,7 @@ footer {
 
 /* 1024*/
 
-@media only screen and (max-width: 1px) {
+@media only screen and (max-width: 1024px) {
 
     /* Header */
     
@@ -2049,4 +2049,3 @@ footer {
             padding-top: 75px;
         }
     }
-

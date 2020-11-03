@@ -122,6 +122,11 @@ a:focus {
     font-weight: lighter;
 }
 
+.top {
+    position: fixed;
+    
+}
+
 /* Hero */
 
 .heroBg {

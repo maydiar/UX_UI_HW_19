@@ -36,3 +36,12 @@ $('a[href*="#"]')
       }
     }
   });
+
+  $(".topLink").on("click", function(){
+    console.log("You clicked on my link!")
+  });
+
+  var colorChanger = document.getElementsByTagName("ul")[0];
+  colorChanger.addEventListener("click",function() {
+    document.querySelector('a').style.color = "#a8ad00";  
+  });
